@@ -12,24 +12,56 @@ import { SmartRSection } from "@/components/smartr-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { FinalCtaSection } from "@/components/final-cta-section";
 import { Footer } from "@/components/footer";
+import { ScrollReveal } from "@/components/scroll-reveal"
 
 export default function HomePage() {
   return (
-   <main className="min-h-screen relative overflow-hidden">
-  <DynamicBackground />
+    <main className="min-h-screen relative overflow-hidden">
+      <DynamicBackground />
 
-  <Navbar />
-  <SocialSidebar />
-  <HeroSection  />
-  <WhatWeDoSection />
-  <ForCardsSection />
-  <HowItWorksSection />
-  <SpecializedSection />
-  <CompaniesSection />
-  <SmartRSection />
-  <TestimonialsSection />
-  <FinalCtaSection />
-  <Footer />
-</main>
+      <Navbar />
+      <SocialSidebar />
+
+      <ScrollReveal>
+        <HeroSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <WhatWeDoSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <ForCardsSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <HowItWorksSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <SpecializedSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <CompaniesSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <SmartRSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <TestimonialsSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <FinalCtaSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <Footer />
+      </ScrollReveal>
+
+    </main>
   );
 }
